@@ -1,0 +1,44 @@
+.carousel {
+  width: 100%;
+  position: relative;
+  padding-bottom: 45%;
+}
+.carousel .img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size:cover;
+  background-position:center;
+  display: flex;
+  flex-direction: column-reverse;
+  color: white;
+}
+
+.carousel .img .btnCon{
+  margin: 0 5% 2rem;
+}
+.carousel .img .headCon{
+  margin: 0 5% 2rem;
+}
+
+.carousel .img .btnCon{
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+@media (max-width:1200px) {
+  .carousel {
+    padding-bottom: 60%;
+  }
+  .carousel .img .btnCon{
+    margin: 0 3% 1rem;
+  }
+  .carousel .img .headCon{
+    margin: 0 3% 1rem;
+  }
+  .carousel .img .headCon h1{
+    margin: 2px;
+    padding: 2px;
+  }
+
+}

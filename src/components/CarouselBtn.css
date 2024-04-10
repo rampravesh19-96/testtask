@@ -1,0 +1,16 @@
+.carouselBtn{
+    background-color: transparent;
+    height: 3rem;
+    width: 3rem;
+    /* color: #F36F2B;
+    border: 1px solid #FFE1E1; */
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+@media (max-width:1200px) {
+    .carouselBtn{
+        height: 2.5rem;
+        width: 2.5rem;
+    } 
+}

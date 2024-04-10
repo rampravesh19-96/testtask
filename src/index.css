@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+}
+.app{
+    width: 100%;
+    min-height: 200px;
+}
+.allSlider{
+    display: flex;
+    position: relative;
+    bottom: 5px;
+    z-index: 10;
+    flex-wrap: wrap;
+}
+.allSlider>div{
+    width: calc((100% - 126px)/3);
+    flex-grow: 1;
+}
+.devider1{
+    height: 5px;
+    width: 25%;
+    background-color: #F36F2B;
+    z-index: 20;
+    position: relative;
+}
+/* body{
+    margin: 0;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+}
+.carousel{
+    height: 83vh;
+    width: 100%;
+    background-size:cover;
+    background-position:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.carousel img{
+    width: 100%;
+    height: 83vh;
+}
+.carousel-bottom{
+    height: 17vh;
+    background-color: purple;
+    width: 100%;
+    position: relative;
+    bottom: 5px;
+    z-index: 10;
+}
+.devider1{
+    height: 5px;
+    width: 25%;
+    background-color: #F36F2B;
+    z-index: 20;
+    position: relative;
+}
+.headAndBtn{
+    margin: 2.5rem 5%;
+}
+.headAndSUbHead{
+    color: white;
+}
+.carouselBtn{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 15px;
+}
+.carouselBtn button{
+    background-color: transparent;
+    height: 3rem;
+    width: 3rem;
+    color: #F36F2B;
+    border: 1px solid #FFE1E1;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding: 4.5rem 0;
+    text-transform:uppercase;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: white;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.6);
+    background-color: transparent;
+    transition: background-color 0.3s ease
+}
+.header.stickyy{
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+.header ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+
+@media (max-width:868px){
+    .carousel{
+        height: 60vh;
+        width: 100%;
+    }
+    .carousel img{
+        width: 100%;
+        height: 60vh;
+    }
+} */
