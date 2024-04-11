@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Card Layout</title>
+<style>
+  .container {
+    display: grid;
+    grid-template-columns: 45% 35%;
+    grid-gap: 10px;
+  }
+  .card {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  .card:nth-child(3) {
+    grid-column: span 2;
+  }
+  .tall-card {
+    height: 400px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="card" style="height: 200px;">Card 1</div>
+  <div class="card" style="height: 200px;">Card 2</div>
+  <div class="card tall-card">Tall Card</div>
+</div>
+
+</body>
+</html>

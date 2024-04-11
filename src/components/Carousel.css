@@ -3,6 +3,7 @@
   position: relative;
   padding-bottom: 45%;
 }
+
 .carousel .img {
   position: absolute;
   width: 100%;
@@ -13,19 +14,80 @@
   flex-direction: column-reverse;
   color: white;
 }
+.carousel .img2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 
-.carousel .img .btnCon{
+  background-size:cover;
+  background-position:center;
+  display: flex;
+  flex-direction: column-reverse;
+  color: white;
+}
+
+.carousel .img .btnCon,.carousel .img2 .btnCon{
   margin: 0 5% 2rem;
 }
-.carousel .img .headCon{
+.carousel .img .headCon,.carousel .img2 .headCon{
   margin: 0 5% 2rem;
 }
 
-.carousel .img .btnCon{
+.carousel .img .btnCon,.carousel .img2 .btnCon{
   display: flex;
   flex-direction: row-reverse;
   gap: 20px;
 }
+
+
+.layoutChange .heading{
+  font-size: 3rem;
+}
+.layoutChange .heading span{
+  color: #F36F2B;
+}
+
+
+.subheadAndIcon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subheadAndIcon2{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.subheadAndIcon .headAndIcon{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.subheadAndIcon .subhead{
+  font-size: 1.5rem;
+}
+.subheadAndIcon2 .subhead{
+  font-size: 1.5rem;
+}
+.subheadAndIcon img{
+  width: 35px;
+}
+.devider2{
+  display: flex;
+  align-items: center;
+}
+.devider2 .verDevider{
+  height: 150px;
+  width: 5px;
+  background-color: #F36F2B;
+}
+.devider2 .hdevider{
+  height: 5px;
+  width: 150px;
+  background-color: #F36F2B;
+
+}
+
 @media (max-width:1200px) {
   .carousel {
     padding-bottom: 60%;
@@ -41,4 +103,25 @@
     padding: 2px;
   }
 
+}
+
+@media (max-width:880px) {
+  .devider2 .verDevider{
+    height: 100px;
+  }
+  .devider2 .hdevider{
+    width: 100px;  
+  }
+  .layoutChange .heading{
+    font-size: 2.5rem;
+  }
+  .subheadAndIcon .subhead{
+    font-size: 1.23rem;
+  }
+  .subheadAndIcon img {
+    width: 28px;
+}
+.subheadAndIcon .headAndIcon{
+  gap: 20px;
+}
 }
