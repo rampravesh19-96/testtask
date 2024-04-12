@@ -40,53 +40,7 @@
 }
 
 
-.layoutChange .heading{
-  font-size: 3rem;
-}
-.layoutChange .heading span{
-  color: #F36F2B;
-}
 
-
-.subheadAndIcon{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.subheadAndIcon2{
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-.subheadAndIcon .headAndIcon{
-  display: flex;
-  gap: 30px;
-  align-items: center;
-}
-.subheadAndIcon .subhead{
-  font-size: 1.5rem;
-}
-.subheadAndIcon2 .subhead{
-  font-size: 1.5rem;
-}
-.subheadAndIcon img{
-  width: 35px;
-}
-.devider2{
-  display: flex;
-  align-items: center;
-}
-.devider2 .verDevider{
-  height: 150px;
-  width: 5px;
-  background-color: #F36F2B;
-}
-.devider2 .hdevider{
-  height: 5px;
-  width: 150px;
-  background-color: #F36F2B;
-
-}
 
 @media (max-width:1200px) {
   .carousel {
@@ -105,23 +59,107 @@
 
 }
 
-@media (max-width:880px) {
-  .devider2 .verDevider{
-    height: 100px;
-  }
-  .devider2 .hdevider{
-    width: 100px;  
-  }
-  .layoutChange .heading{
-    font-size: 2.5rem;
-  }
-  .subheadAndIcon .subhead{
-    font-size: 1.23rem;
-  }
-  .subheadAndIcon img {
-    width: 28px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.allSlider {
+  display: flex;
+  position: relative;
+  bottom: 5px;
+  z-index: 10;
+  flex-wrap: wrap;
 }
-.subheadAndIcon .headAndIcon{
-  gap: 20px;
+.allSlider > div {
+  width: calc((100% - 126px) / 3);
+  flex-grow: 1;
 }
+.devider1 {
+  height: 5px;
+  width: 25%;
+  background-color: #f36f2b;
+  z-index: 20;
+  position: relative;
 }
+.carousel2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.carousel2 .left,
+.carousel2 .right {
+  width: 50%;
+}
+.carousel2 .left {
+  height: 950px;
+  color: black;
+}
+.carousel.newRation {
+  padding-bottom: 950px;
+}
+
+@media (max-width: 1350px) {
+  /* .carousel2 .left {
+    height: 950px;
+  }
+  .carousel.newRation {
+    padding-bottom: 950px;
+  } */
+}
+@media (max-width: 1000px) {
+  .carousel2 .left,
+  .carousel2 .right {
+    width: 100%;
+  }
+  /* .carousel2 .left {
+    height: 550px;
+  }
+  .carousel.newRation {
+    padding-bottom: 550px;
+  } */
+
+}
+@media (max-width: 580px) {
+
+  .allSlider > div {
+    width: 100%;
+  }
+} 
+/* @media (max-width: 450px) {
+
+  .carousel2 .left {
+    height: 600px;
+  }
+  .carousel.newRation {
+    padding-bottom: 600px;
+  }
+}  */
+/* @media (max-width: 380px) {
+
+  .carousel2 .left {
+    height: 800px;
+  }
+  .carousel.newRation {
+    padding-bottom: 800px;
+  }
+}  */

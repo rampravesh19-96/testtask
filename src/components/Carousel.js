@@ -53,9 +53,9 @@ const Carousel = ({
             )}
             {text && (
               <div className="headCon">
-                <div>{carouselData[curData].subHeading1}</div>
+                <h3>{carouselData[curData].subHeading1}</h3>
                 <h1>{carouselData[curData].heading}</h1>
-                <div>{carouselData[curData].subHeading2}</div>
+                <h3>{carouselData[curData].subHeading2}</h3>
               </div>
             )}
           </div>

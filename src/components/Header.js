@@ -19,17 +19,17 @@ const Header = () => {
       }, []);
 
   return (
-    <div className={`header ${isSticky ? "stickyy" : ""}`}>
+    <div className={`header ${isSticky ? "stickyy" : ""} smheading`}>
     <ul>
-      <li>projects</li>
-      <li>expertise</li>
-      <li>about us</li>
-      <li>people</li>
+      <li><h3>projects</h3></li>
+      <li><h3>expertise</h3></li>
+      {/* <li>about us</li>
+      <li>people</li> */}
     </ul>
-    <ul>
+    {/* <ul>
       <li>careers</li>
       <li>au</li>
-    </ul>
+    </ul> */}
   </div>  )
 }
 

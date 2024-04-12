@@ -94,17 +94,15 @@ const App = () => {
       <div className="carousel2">
         <div className="left">
           <div className="layoutChange">
-            <div className="heading">
-              We <span>stay connected</span>
-            </div>
+            <h2>We <span>stay connected</span></h2>
             <div className="subheadAndIcon">
               <div className="headAndIcon">
                 <img src={imgicon1} alt="" />
-                <div className="subhead">Quarterly Business Updates</div>
+                <h3>Quarterly Business Updates</h3>
               </div>
               <div className="devider2">
-                <div className="hdevider"></div>
                 <div className="verDevider"></div>
+                <div className="hdevider"></div>
               </div>
             </div>
             <p>
@@ -122,15 +120,15 @@ const App = () => {
             <div className="subheadAndIcon">
               <div className="headAndIcon">
                 <img src={imgicon2} alt="" />
-                <div className="subhead">Quarterly Business Updates</div>
+                <h3>Quarterly Business Updates</h3>
               </div>{" "}
             </div>
             <br />
             <br />
             <div className="subheadAndIcon">
               <div className="headAndIcon">
-                <img src={imgicon3} alt="" />
-                <div className="subhead">Quarterly Business Updates</div>
+                <img src={imgicon3} alt="" className="bgicon" />
+                <h3>Quarterly Business Updates</h3>
               </div>{" "}
             </div>
           </div>
@@ -148,7 +146,9 @@ const App = () => {
           <div className="top">
             <div className="left">
               <div style={{ width: "100%" }}>
-                <h1>We believe in <span>diversity & inclusion</span></h1>
+                <h1>
+                  We believe in <span>diversity & inclusion</span>
+                </h1>
               </div>
             </div>
             <div className="right">
@@ -177,19 +177,19 @@ const App = () => {
               </div>
             </div>
           </div>
-          <div style={{width:"100%"}}>
-          <div className="graph">
-            <img src={graph} alt="" height={"100%"} width={"100%"}/>
+          <br />
+          <br />
+          <div style={{ width: "100%" }}>
+            <div className="graph">
+              <img src={graph} alt="" height={"100%"} width={"100%"} />
+            </div>
           </div>
-          </div>
-
         </div>
       </div>
-      <br />
-    <br />
-    <br />
-      <Layout/>
- 
+        <br />
+        <br />
+        <br />
+      <Layout />
     </div>
   );
 };

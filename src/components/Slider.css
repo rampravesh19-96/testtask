@@ -5,10 +5,8 @@
     align-items: center;
     color: white;
     background-color: #112C41;
-    padding: 2rem 20px;
+    padding: 2rem 0;
     border: 1px solid #000000;
-    min-width: 450px;
-
 }
 .slider .number{
     color: #6B6B6B;
@@ -16,7 +14,7 @@
     margin: 0 10px;
 }
 .slider>div{
-    width: 100%;
+    width: 90%;
 }
 .textAndBtn{
     display: flex;
@@ -36,5 +34,10 @@
 @media (max-width:770px){
     .textAndBtn .text{
         font-size: 1.3rem;
+    }
+}
+@media (min-width:450px){
+    .slider{
+        min-width: 450px;
     }
 }

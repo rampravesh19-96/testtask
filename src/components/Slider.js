@@ -22,9 +22,9 @@ const Slider = ({data}) => {
       }, []);
   return (
     <div className="slider">
-      <div className="number">0{data[curData].index}</div>
+      <div className="number"><h3>0{data[curData].index}</h3></div>
       <div className="textAndBtn">
-        <div className="text">{data[curData].text}</div>
+        <div><h2>{data[curData].text}</h2></div>
         <CarouselBtn btnText={">"} bdCol={'#FFE1E1'} col={'white'} handleCrousel={handleSlider}/>
       </div>
     </div>

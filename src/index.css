@@ -1,7 +1,213 @@
-body {
+*{
   margin: 0;
+  padding: 0;
 }
-.app {
+html {
+  font-size: 10px; 
+  color: white;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+h4{
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #6B6B6B;
+  text-align: justify;
+}
+
+.subheadAndIcon{
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.subheadAndIcon2{
+  display: flex;
+  align-items: center;
+}
+.subheadAndIcon .headAndIcon{
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.layoutChange img{
+  width: 2rem;
+}
+.layoutChange .bgicon{
+  width: 1.6rem;
+}
+.layoutChange{
+  padding-left: 1rem;
+  padding-top: 3rem;
+}
+
+
+
+.layoutChange p {
+margin-right: 4rem;
+margin-left: 3.6rem;
+text-align: justify;
+line-height: 1.9;
+color: #6b6b6b;
+position: relative;
+bottom: 30px;
+}
+.layoutChange .heading span{
+  color: #F36F2B;
+}
+.devider2{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 20%;
+}
+.devider2 .verDevider{
+  height: 8rem;
+  width: 5px;
+  background-color: #F36F2B;
+}
+.devider2 .hdevider{
+  height: 5px;
+  width: 8rem;
+  background-color: #F36F2B;
+
+  
+}
+.midgraphsec {
+  width: 100%;
+}
+.midgraphsec .img {
+  width: 100%;
+  color: white;
+}
+.midgraphsec .top{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 3rem;
+  margin-bottom: 0;
+}
+.midgraphsec .top .left,.midgraphsec .top .right{
+  width: 50%;
+  display: flex;
+}
+.midgraphsec .top .right{
+}
+
+.midgraphsec .top .left>div,.midgraphsec .top .right>div{
+  padding: 3rem;
+  padding-bottom: 0;
+}
+
+  .midgraphsec .top .left>div h1 span{
+      color: #F36F2B;
+  }
+.midgraphsec .top .right>div p{
+  text-align: justify;
+  line-height: 2;
+}
+.graph img{
+  object-fit: contain;
+}
+.midgraphsec .top p{
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  /* .carousel2 .left,
+  .carousel2 .right {
+    width: 100%;
+  }
+  .layoutChange {
+    padding: 3rem;
+    padding-right: 0;
+  } */
+  
+
+  .midgraphsec .top .left,.midgraphsec .top .right{
+    width: 100%;
+  }
+  .midgraphsec .top{
+    margin: 1rem;
+    margin-bottom: 0;
+  }
+
+}
+@media (max-width: 580px) {
+
+  .midgraphsec .top{
+    margin: 0;
+    margin-bottom: 0;
+  }
+
+  .midgraphsec .top .left>div,.midgraphsec .top .right>div{
+    padding: 1.5rem;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 577px) {
+  html {
+    font-size: 12px; 
+  }
+  .layoutChange{
+    padding-left: 3rem;
+    padding-top: 3rem;
+  }
+  p{
+    font-size: 1.2rem;
+  }
+  
+
+  .layoutChange p {
+  margin-right: 5rem;
+  }
+  
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 14px;
+}
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 18px;
+}
+}
+
+/* @media (max-width:880px) {
+  .devider2 .verDevider{
+    height: 100px;
+  }
+  .devider2 .hdevider{
+    width: 100px;  
+  }
+
+} */
+
+/* .app {
   width: 100%;
   min-height: 200px;
 }
@@ -31,70 +237,12 @@ body {
 .carousel2 .right {
   width: 50%;
 }
-.carousel2 .left {
-  height: 700px;
-}
-.carousel.newRation {
-  padding-bottom: 700px;
-}
+
 
 .layoutChange {
   padding: 5rem;
   padding-right: 0;
 }
-.layoutChange p {
-  margin-right: 5rem;
-  text-align: justify;
-  line-height: 1.9;
-  color: #6b6b6b;
-  position: relative;
-  bottom: 50px;
-}
-
-.midgraphsec {
-    width: 100%;
-    /* position: relative;
-    padding-bottom: 80%; */
-  }
-  .midgraphsec .img {
-    /* position: absolute; */
-    width: 100%;
-    /* height: 100%;
-    background-size:cover;
-    background-position:center; */
-    color: white;
-  }
-  .midgraphsec .top{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 3rem;
-    margin-bottom: 0;
-  }
-  .midgraphsec .top .left,.midgraphsec .top .right{
-    width: 50%;
-    display: flex;
-  }
-  .midgraphsec .top .right{
-  }
-
-  .midgraphsec .top .left>div,.midgraphsec .top .right>div{
-    padding: 3rem;
-    padding-bottom: 0;
-  }
-  .midgraphsec .top .left>div h1{
-      font-size: 4rem;
-      font-weight: 500;
-    }
-    .midgraphsec .top .left>div h1 span{
-        color: #F36F2B;
-    }
-  .midgraphsec .top .right>div p{
-    text-align: justify;
-    line-height: 2;
-  }
-  .graph img{
-    object-fit: contain;
-  }
 
 
 
@@ -104,33 +252,21 @@ body {
 
 
 
-@media (max-width: 1350px) {
-  .carousel2 .left {
-    height: 830px;
-  }
-  .carousel.newRation {
-    padding-bottom: 830px;
-  }
-}
+
+
+
+
 @media (max-width: 1000px) {
   .carousel2 .left,
   .carousel2 .right {
     width: 100%;
   }
-  .carousel2 .left {
-    height: 700px;
-  }
-  .carousel.newRation {
-    padding-bottom: 700px;
-  }
   .layoutChange {
     padding: 3rem;
     padding-right: 0;
   }
-  .layoutChange p {
-    margin-right: 3rem;
-    bottom: 20px;
-  }
+  
+
   .midgraphsec .top .left,.midgraphsec .top .right{
     width: 100%;
   }
@@ -143,12 +279,7 @@ body {
   }
 }
 @media (max-width: 580px) {
-  .carousel2 .left {
-    height: 820px;
-  }
-  .carousel.newRation {
-    padding-bottom: 820px;
-  }
+
   .midgraphsec .top{
     margin: 0;
     margin-bottom: 0;
@@ -163,4 +294,4 @@ body {
   .allSlider > div {
     width: 100%;
   }
-}
+} */

@@ -19,11 +19,33 @@ const Layout = () => {
               <img src={img102} alt="" className="topimg" />
               <img src={img103} alt="" className="bottomimg" />
             </div>
-            <div className="bottom">
+            <div className="bottom" style={{color:"black"}}>
               <img src={img104} alt="" className="topimg" />
-              <div className="bottomCon"></div>
+              <div className="bottomCon">
+                <div>
+              <div className="heading">
+                  <h2>We celebrate <span>success</span></h2>
+                </div>
+                <p>
+                  At CaSE we understand that every achievement, big or small, is
+                  a result of the hard work and dedication of our team members.
+                  We take pride in celebrating these moments because they
+                  underscore the commitment and effort put into each project.
+                </p>
+                <p>
+                  Some of our favourite events on the calendar include our
+                  coveted Melbourne Cup event and our always amazing Christmas
+                  Party. In-between, our team celebrate together during team
+                  cycling events, regular team dinners and social morning teas
+                  to celebrate milestones and special days. Taking the time to
+                  celebrate wins is our way of showing gratitude and ensuring
+                  everyone knows their efforts make a difference.
+                </p>
+                </div>
+              </div>
             </div>
           </div>
+
           <div className="right">
             <img src={img101} alt="" />
           </div>
@@ -46,7 +68,7 @@ const Layout = () => {
             <div>
               <div>
                 <div className="heading">
-                  We celebrate <span>success</span>
+                  <h2>We celebrate <span>success</span></h2>
                 </div>
                 <p>
                   At CaSE we understand that every achievement, big or small, is
@@ -68,13 +90,13 @@ const Layout = () => {
             <img src={img105} alt="" />
           </div>
         </div>
-      </div>
+      </div> 
       <div className="bottomgrid">
         <div className="top">
           <div>
             <div>
               <div className="heading">
-                Employee <span>Appreciation Program</span>
+                <h2>Employee <span>Appreciation Program</span></h2>
               </div>
               <p>
                 Our Employee Appreciation Program is tailored to honor the
