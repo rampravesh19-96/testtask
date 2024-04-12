@@ -14,7 +14,7 @@
     margin: 0 10px;
 }
 .slider>div{
-    width: 90%;
+    width: calc(100% - 2rem);
 }
 .textAndBtn{
     display: flex;
