@@ -12,6 +12,7 @@ import graph from "./images/graph.svg";
 import Header from "./components/Header";
 import Slider from "./components/Slider";
 import Layout from "./components/Layout";
+import LastComp from "./components/LastComp";
 const s1Data = [
   { index: 1, text: "We stay connected1" },
   { index: 2, text: "We stay connected2" },
@@ -82,6 +83,7 @@ const carouselData2 = [
 
 const App = () => {
   return (
+    <>
     <div className="app">
       <Header />
       <Carousel carouselData={carouselData1} />
@@ -186,11 +188,10 @@ const App = () => {
           </div>
         </div>
       </div>
-        <br />
-        <br />
-        <br />
       <Layout />
+      <LastComp/>
     </div>
+    </>
   );
 };
 
