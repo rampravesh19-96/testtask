@@ -51,7 +51,9 @@ const Layout = () => {
           </div>
         </div>
         <div className="imgadjust">
+          <div>
           <img src={img105} alt="" />
+          </div>
         </div>
       </div>
       <div className="smallscreen">
