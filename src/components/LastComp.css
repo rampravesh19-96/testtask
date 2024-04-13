@@ -1,165 +1,155 @@
 .main .toppart {
-    width: 100%;
-    position: relative;
-    padding-bottom: 40%;
-    background-color: #112C41;
-    
-  }
-  
-  .main .toppart .topcon {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .main .toppart .topcon .leftpart{
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  position: relative;
+  padding-bottom: 40%;
+  background-color: #112c41;
 }
-.main .toppart .topcon .leftpart .imgcon{
-    width: 60%;
-    position: relative;
-    padding-bottom: 70%;
+
+.main .toppart .topcon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
-.main .toppart .topcon .leftpart .imgcon img{
-    position: absolute;
+.main .toppart .topcon .leftpart {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .toppart .topcon .leftpart .imgcon {
+  width: 60%;
+  position: relative;
+  padding-bottom: 70%;
+}
+.main .toppart .topcon .leftpart .imgcon img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.main .toppart .topcon .rightpart {
+  width: 60%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main .toppart .topcon .rightpart > div > * {
+  margin-bottom: 10px;
+}
+.main .toppart .topcon .rightpart img {
+  width: 1.5rem;
+}
+.main .toppart .topcon .rightpart p {
+  color: white;
+  line-height: 1.2;
+}
+.main .toppart .topcon .rightpart .readmore {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.arrowbtn {
+  width: 90%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.main .bottompart {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.main .bottompart .btcon {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+}
+.main .bottompart .btcon .mainhead {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+.main .bottompart .btcon .subhead {
+  margin: 2rem 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.main .bottompart .btcon .openroles {
+  color: #f36f2b;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.main .bottompart .btcon .mainhead div {
+  line-height: 1;
+}
+.main .bottompart .btcon .mainhead span {
+  color: #f36f2b;
+}
+.main .bottompart .btcon .mapimgcon {
+  width: 100%;
+  padding-bottom: 40%;
+  position: relative;
+  margin-top: 2rem;
+}
+.main .bottompart .btcon .mapimgcon img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.arrcircle {
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.arrcircle img {
+  height: 1rem;
+  width: 1rem;
+}
+
+@media (max-width: 768px) {
+  .main .toppart .topcon .leftpart {
     width: 100%;
-    height: 100%;
   }
-  .main .toppart .topcon .rightpart{
-      width: 60%;
-      min-height: 200px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      
-    }
-    .main .toppart .topcon .rightpart>div>*{
-        margin-bottom: 10px;
-    }
-    .main .toppart .topcon .rightpart img{
-        width: 1.5rem;
-    }
-    .main .toppart .topcon .rightpart p{
-        color: white;
-        line-height: 1.2;
-    }
-    .main .toppart .topcon .rightpart .readmore{
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        cursor: pointer;
-    }
-    .arrowbtn{
-        width: 90%;
-        display: flex;
-        flex-direction: column-reverse;
-    }
+  .main .toppart .topcon .rightpart {
+    width: 100%;
+  }
+  .main .toppart {
+    padding-bottom: 120%;
+  }
+  .main .toppart .topcon .leftpart .imgcon {
+    padding-bottom: 60%;
+  }
+}
+@media (max-width: 500px) {
+  .main .toppart {
+    padding-bottom: 140%;
+  }
+}
 
-    .main .bottompart{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: black;
-    }
-    .main .bottompart .btcon{
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 4rem 0;
-    }
-    .main .bottompart .btcon .mainhead{
-        font-size: 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-weight: 500;
-    }
-    .main .bottompart .btcon .subhead{
-        margin: 2rem 0;
-        font-weight: bold;
-        font-size: 1rem;
-    }
-    .main .bottompart .btcon .openroles{
-        color: #F36F2B;
-        font-size: 1rem;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .main .bottompart .btcon .mainhead div{
-        line-height: 1;
-    }
-    .main .bottompart .btcon .mainhead span{
-        color: #F36F2B;
-    }
-    .main .bottompart .btcon .mapimgcon{
-        width: 100%;
-        padding-bottom: 40%;
-        position: relative;
-        margin-top: 2rem;
-    }
-    .main .bottompart .btcon .mapimgcon img{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-    }
-    .arrcircle{
-        height: 2rem;
-        width: 2rem;
-        border: 1px solid #D9D9D9;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-    }
-    .arrcircle img{
-        height: 1rem;
-        width: 1rem;
-    }
-
-    @media (max-width:768px){
-  
-          .main .toppart .topcon .leftpart{
-            width: 100%;
-        }
-          .main .toppart .topcon .rightpart{
-            width: 100%;
-        }
-        .main .toppart {
-            padding-bottom: 120%;
-          }
-        .main .toppart .topcon .leftpart .imgcon{
-            padding-bottom: 60%;
-        }
-    }
-     @media (max-width:500px){
-
-          .main .toppart {
-            padding-bottom: 140%;
-          }
-    }
-   
-    @media (max-width:370px){
-        .main .toppart {
-            padding-bottom: 160%;
-          }
-    }
-     /*
-    @media (max-width:330px){
-        .main .toppart {
-            padding-bottom: 140%;
-          }
-    } */
+@media (max-width: 370px) {
+  .main .toppart {
+    padding-bottom: 160%;
+  }
+}

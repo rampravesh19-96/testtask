@@ -1,9 +1,9 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 html {
-  font-size: 10px; 
+  font-size: 10px;
   color: white;
 }
 
@@ -19,74 +19,73 @@ h2 {
 h3 {
   font-size: 1.4rem;
 }
-h4{
+h4 {
   font-size: 1rem;
 }
 
 p {
   font-size: 1.5rem;
   line-height: 1.5;
-  color: #6B6B6B;
+  color: #6b6b6b;
   text-align: justify;
 }
 
-.subheadAndIcon{
+.subheadAndIcon {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
 }
-.subheadAndIcon2{
+.subheadAndIcon2 {
   display: flex;
   align-items: center;
 }
-.subheadAndIcon .headAndIcon{
+.subheadAndIcon .headAndIcon {
   display: flex;
   gap: 1.5rem;
   align-items: center;
 }
 
-.layoutChange img{
+.layoutChange img {
   width: 2rem;
 }
-.layoutChange .bgicon{
+.layoutChange .bgicon {
   width: 1.6rem;
 }
-.layoutChange{
-  padding-left: 1rem;
-  padding-top: 3rem;
+.layoutChange {
+  padding: 3rem 0 3rem 3rem;
 }
-
-
-
+.layoutChange h2 {
+  color: black;
+}
+.layoutChange h3 {
+  color: black;
+}
 .layoutChange p {
-margin-right: 4rem;
-margin-left: 3.6rem;
-text-align: justify;
-line-height: 1.9;
-color: #6b6b6b;
-position: relative;
-bottom: 30px;
+  margin-right: 4rem;
+  margin-left: 3.6rem;
+  text-align: justify;
+  line-height: 1.9;
+  color: #6b6b6b;
+  position: relative;
+  bottom: 30px;
 }
-.layoutChange .heading span{
-  color: #F36F2B;
+.layoutChange .heading span {
+  color: #f36f2b;
 }
-.devider2{
+.devider2 {
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
   width: 20%;
 }
-.devider2 .verDevider{
+.devider2 .verDevider {
   height: 8rem;
   width: 5px;
-  background-color: #F36F2B;
+  background-color: #f36f2b;
 }
-.devider2 .hdevider{
+.devider2 .hdevider {
   height: 5px;
   width: 8rem;
-  background-color: #F36F2B;
-
-  
+  background-color: #f36f2b;
 }
 .midgraphsec {
   width: 100%;
@@ -95,66 +94,67 @@ bottom: 30px;
   width: 100%;
   color: white;
 }
-.midgraphsec .top{
+.midgraphsec .top {
   display: flex;
   flex-wrap: wrap;
   margin: 0 3rem;
   margin-bottom: 0;
 }
-.midgraphsec .top .left,.midgraphsec .top .right{
+.midgraphsec .top .left,
+.midgraphsec .top .right {
   width: 50%;
   display: flex;
 }
-.midgraphsec .top .right{
-}
 
-.midgraphsec .top .left>div,.midgraphsec .top .right>div{
+.midgraphsec .top .left > div,
+.midgraphsec .top .right > div {
   padding: 3rem;
   padding-bottom: 0;
 }
 
-  .midgraphsec .top .left>div h1 span{
-      color: #F36F2B;
-  }
-.midgraphsec .top .right>div p{
+.midgraphsec .top .left > div h1 span {
+  color: #f36f2b;
+}
+.midgraphsec .top .right > div p {
   text-align: justify;
   line-height: 2;
 }
-.graph img{
+.graph img {
   object-fit: contain;
 }
-.midgraphsec .top p{
+.midgraphsec .top p {
   color: white;
 }
 
-@media (max-width: 1000px) {
-  /* .carousel2 .left,
-  .carousel2 .right {
-    width: 100%;
-  }
-  .layoutChange {
-    padding: 3rem;
-    padding-right: 0;
-  } */
-  
+.allSlider {
+  display: flex;
+  position: relative;
+  bottom: 5px;
+  flex-wrap: wrap;
+}
+.allSlider > div {
+  width: calc((100% - 126px) / 3);
+  flex-grow: 1;
+}
 
-  .midgraphsec .top .left,.midgraphsec .top .right{
+@media (max-width: 1000px) {
+  .midgraphsec .top .left,
+  .midgraphsec .top .right {
     width: 100%;
   }
-  .midgraphsec .top{
+  .midgraphsec .top {
     margin: 1rem;
     margin-bottom: 0;
   }
-
 }
 @media (max-width: 580px) {
-
-  .midgraphsec .top{
+  .midgraphsec .top {
     margin: 0;
     margin-bottom: 0;
   }
 
-  .midgraphsec .top .left>div,.midgraphsec .top .right>div{
+  .midgraphsec .top .left > div,
+  .midgraphsec .top .right > div {
     padding: 1.5rem;
     padding-bottom: 0;
   }
@@ -162,27 +162,22 @@ bottom: 30px;
 
 @media (min-width: 577px) {
   html {
-    font-size: 12px; 
+    font-size: 12px;
   }
-  .layoutChange{
-    padding-left: 3rem;
-    padding-top: 3rem;
-  }
-  p{
+
+  p {
     font-size: 1.2rem;
   }
-  
 
   .layoutChange p {
-  margin-right: 5rem;
+    margin-right: 5rem;
   }
-  
 }
 
 @media (min-width: 768px) {
   html {
     font-size: 14px;
-}
+  }
 }
 
 @media (min-width: 992px) {
@@ -194,104 +189,41 @@ bottom: 30px;
 @media (min-width: 1200px) {
   html {
     font-size: 18px;
-}
-}
-
-/* @media (max-width:880px) {
-  .devider2 .verDevider{
-    height: 100px;
   }
-  .devider2 .hdevider{
-    width: 100px;  
-  }
-
-} */
-
-/* .app {
-  width: 100%;
-  min-height: 200px;
 }
-.allSlider {
-  display: flex;
-  position: relative;
-  bottom: 5px;
-  z-index: 10;
-  flex-wrap: wrap;
-}
-.allSlider > div {
-  width: calc((100% - 126px) / 3);
-  flex-grow: 1;
-}
-.devider1 {
-  height: 5px;
-  width: 25%;
-  background-color: #f36f2b;
-  z-index: 20;
-  position: relative;
-}
-.carousel2 {
-  display: flex;
-  flex-wrap: wrap;
-}
-.carousel2 .left,
-.carousel2 .right {
-  width: 50%;
-}
-
-
-.layoutChange {
-  padding: 5rem;
-  padding-right: 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 1000px) {
-  .carousel2 .left,
-  .carousel2 .right {
-    width: 100%;
-  }
   .layoutChange {
     padding: 3rem;
     padding-right: 0;
   }
-  
 
-  .midgraphsec .top .left,.midgraphsec .top .right{
+  .midgraphsec .top .left,
+  .midgraphsec .top .right {
     width: 100%;
   }
-  .midgraphsec .top{
+  .midgraphsec .top {
     margin: 1rem;
     margin-bottom: 0;
   }
-  .midgraphsec .top .left>div h1{
+  .midgraphsec .top .left > div h1 {
     font-size: 3rem;
   }
 }
 @media (max-width: 580px) {
-
-  .midgraphsec .top{
+  .midgraphsec .top {
     margin: 0;
     margin-bottom: 0;
   }
-  .midgraphsec .top .left>div h1{
+  .midgraphsec .top .left > div h1 {
     font-size: 2.5rem;
   }
-  .midgraphsec .top .left>div,.midgraphsec .top .right>div{
+  .midgraphsec .top .left > div,
+  .midgraphsec .top .right > div {
     padding: 1.5rem;
     padding-bottom: 0;
   }
   .allSlider > div {
     width: 100%;
   }
-} */
+}
